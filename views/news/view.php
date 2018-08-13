@@ -4,7 +4,10 @@
     <div id="wrapper">
         <div id="articles">
                 <div id="about_us">
-                    <p><?php echo $newsItem['content'];?></p>
+                    <p><h2><?php echo $newsItem['title'];?></h2> <img src="<?php echo News::getImage($newsItem['news_id']); ?>" alt="Image" title="Image" /><?php echo $newsItem['content'];?>
+                    <hr>
+                    <div id="data"><?php echo $newsItem['Data_create']; ?> <?php echo $newsItem['author']; ?></div>
+                    </p>
                 </div>
                 <div id="add_comments">
 
